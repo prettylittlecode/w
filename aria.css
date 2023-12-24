@@ -35,7 +35,8 @@ html {
     color: rgb(30, 156, 241);
     text-decoration: none;
   }
-  .aria_img_form_container .aria_img_container {
+  .aria_img_form_container 
+  .aria_img_container {
     display: flex;
     align-items: center;
     justify-content: center;
