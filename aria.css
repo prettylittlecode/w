@@ -1,191 +1,65 @@
-*,
-html {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
-@media (min-width: 0) {
-  .aria_img_form_container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .aria_img_form_container h1,
-  .aria_img_form_container h3 {
-    color: #e7e9ea;
-    line-height: 1;
-  }
-  .aria_img_form_container h1 {
-    font-size: 8vw;
-    padding-bottom: 4rem;
-  }
-  .aria_img_form_container h3 {
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-  }
-  .aria_img_form_container a {
-    color: rgb(30, 156, 241);
-    text-decoration: none;
-  }
-  .aria_img_form_container 
-  .aria_img_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    order: 1;
-    padding: 1rem 0;
-    width: 500%;
-    height: 500%;
-    background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
-    background-repeat: no-repeat;
-  }
-  .aria_img_form_container .aria_img_container svg {
-    width: 50%;
-  }
-  .aria_img_form_container .btn_container {
-    width: 90%;
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  .aria_img_form_container .btn_container p {
-    color: #606060;
-    font-size: 0.7rem;
-  }
-  .aria_img_form_container .btn_container .or_text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    color: #ffffff;
-  }
-  .aria_img_form_container .btn_container .or_text::before, .aria_img_form_container .btn_container .or_text::after {
-    content: "";
-    padding: 0.5px;
-    width: 100%;
-    background-color: #606060;
-    border-radius: 2rem;
-  }
-  .aria_img_form_container button {
-    cursor: pointer;
-    padding: 0.8rem 2rem;
-    width: 100%;
-    color: #000000;
-    border-radius: 2rem;
+.login-container {
+    width: 350px;
+    padding: 30px;
+    margin: 50px auto;
     background-color: #ffffff;
-    border: none;
-    outline: none;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-  .aria_img_form_container button:hover {
-    opacity: 0.95;
-  }
-  .aria_img_form_container button svg {
-    width: 1rem;
-  }
-  .aria_img_form_container .appleBtn {
-    font-weight: 901;
-  }
-  .aria_img_form_container .createBtn {
-    font-weight: 900;
-    background-color: rgb(30, 156, 241);
-    color: #ffffff;
-  }
-  .aria_img_form_container .aria_form_container {
-    background-color: #000000;
-    width: 100%;
-    padding: 5rem 2rem;
-  }
-  .aria_img_form_container .aria_form_container .logo_mini {
-    width: 4rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin-bottom: 3rem;
-  }
-  .aria_img_form_container .aria_form_container .logo_mini img {
-    width: 100%;
-  }
-  .aria_img_form_container .aria_form_container .sign_in_btn {
-    margin-top: 5.5rem;
-    width: 100%;
-  }
-  .aria_img_form_container .aria_form_container .sign_in_btn h4 {
-    padding-bottom: 1rem;
-  }
-  .aria_img_form_container .aria_form_container .sign_in_btn button {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    background: transparent;
-    color: rgb(30, 156, 241);
-    border: 1px solid rgb(30, 156, 241);
-    transition: all 150ms ease-in-out;
-  }
-  .aria_img_form_container .aria_form_container .sign_in_btn button:hover {
-    background: rgba(30, 157, 241, 0.13);
-  }
-  footer {
-    color: #606060;
-    font-size: 0.8rem;
-    padding: 1rem 2rem;
-    text-align: center;
-    background-color: #000000;
-    position: relative;
-    bottom: 0;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  footer li {
-    list-style: none;
-    cursor: pointer;
-    color: #606060;
-  }
-  footer a {
-    color: rgb(30, 156, 241);
-    transition: all 250ms ease-in-out;
-  }
-  footer a:hover {
-    filter: brightness(1.5);
-  }
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
 }
-@media (min-width: 1000px) {
-  .aria_img_form_container {
-    flex-direction: row;
-    height: 100vh;
-  }
-  .aria_img_form_container h1 {
-    font-size: 4rem;
-  }
-  .aria_img_form_container .aria_form_container {
-    width: 50%;
-    padding: 2rem 3rem;
-  }
-  .aria_img_form_container .aria_form_container .logo_mini {
-    margin-bottom: 2rem;
-  }
-  .aria_img_form_container .aria_img_container {
-    width: 50%;
-    order: 0;
-    background-attachment: fixed;
-  }
-  .aria_img_form_container .btn_container {
-    width: 50%;
-  }
-}/*# sourceMappingURL=aria.css.map */
+
+h1, h2 {
+    text-align: center;
+    color: #4a4a4a;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login button {
+    margin: 5px;
+    background-color: #ddd;
+    color: black;
+}
+
+.create-account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-account a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
