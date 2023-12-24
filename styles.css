@@ -1,0 +1,190 @@
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 0) {
+  .twitter_img_form_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .twitter_img_form_container h1,
+  .twitter_img_form_container h3 {
+    color: #e7e9ea;
+    line-height: 1;
+  }
+  .twitter_img_form_container h1 {
+    font-size: 8vw;
+    padding-bottom: 4rem;
+  }
+  .twitter_img_form_container h3 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .twitter_img_form_container a {
+    color: rgb(30, 156, 241);
+    text-decoration: none;
+  }
+  .twitter_img_form_container .twitter_img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    padding: 1rem 0;
+    width: 500%;
+    height: 500%;
+    background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
+    background-repeat: no-repeat;
+  }
+  .twitter_img_form_container .twitter_img_container svg {
+    width: 50%;
+  }
+  .twitter_img_form_container .btn_container {
+    width: 90%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .twitter_img_form_container .btn_container p {
+    color: #606060;
+    font-size: 0.7rem;
+  }
+  .twitter_img_form_container .btn_container .or_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: #ffffff;
+  }
+  .twitter_img_form_container .btn_container .or_text::before, .twitter_img_form_container .btn_container .or_text::after {
+    content: "";
+    padding: 0.5px;
+    width: 100%;
+    background-color: #606060;
+    border-radius: 2rem;
+  }
+  .twitter_img_form_container button {
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    width: 100%;
+    color: #000000;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .twitter_img_form_container button:hover {
+    opacity: 0.95;
+  }
+  .twitter_img_form_container button svg {
+    width: 1rem;
+  }
+  .twitter_img_form_container .appleBtn {
+    font-weight: 901;
+  }
+  .twitter_img_form_container .createBtn {
+    font-weight: 900;
+    background-color: rgb(30, 156, 241);
+    color: #ffffff;
+  }
+  .twitter_img_form_container .twitter_form_container {
+    background-color: #000000;
+    width: 100%;
+    padding: 5rem 2rem;
+  }
+  .twitter_img_form_container .twitter_form_container .logo_mini {
+    width: 4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 3rem;
+  }
+  .twitter_img_form_container .twitter_form_container .logo_mini img {
+    width: 100%;
+  }
+  .twitter_img_form_container .twitter_form_container .sign_in_btn {
+    margin-top: 5.5rem;
+    width: 100%;
+  }
+  .twitter_img_form_container .twitter_form_container .sign_in_btn h4 {
+    padding-bottom: 1rem;
+  }
+  .twitter_img_form_container .twitter_form_container .sign_in_btn button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    background: transparent;
+    color: rgb(30, 156, 241);
+    border: 1px solid rgb(30, 156, 241);
+    transition: all 150ms ease-in-out;
+  }
+  .twitter_img_form_container .twitter_form_container .sign_in_btn button:hover {
+    background: rgba(30, 157, 241, 0.13);
+  }
+  footer {
+    color: #606060;
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #000000;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  footer li {
+    list-style: none;
+    cursor: pointer;
+    color: #606060;
+  }
+  footer a {
+    color: rgb(30, 156, 241);
+    transition: all 250ms ease-in-out;
+  }
+  footer a:hover {
+    filter: brightness(1.5);
+  }
+}
+@media (min-width: 1000px) {
+  .twitter_img_form_container {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .twitter_img_form_container h1 {
+    font-size: 4rem;
+  }
+  .twitter_img_form_container .twitter_form_container {
+    width: 50%;
+    padding: 2rem 3rem;
+  }
+  .twitter_img_form_container .twitter_form_container .logo_mini {
+    margin-bottom: 2rem;
+  }
+  .twitter_img_form_container .twitter_img_container {
+    width: 50%;
+    order: 0;
+    background-attachment: fixed;
+  }
+  .twitter_img_form_container .btn_container {
+    width: 50%;
+  }
+}/*# sourceMappingURL=twitter.css.map */
