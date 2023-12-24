@@ -23,7 +23,7 @@ html {
 }
 
 @media (min-width: 0) {
-  .twitter_img_form_container {
+  .aria_img_form_container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ html {
       text-decoration: none;
     }
 
-    .twitter_img_container {
+    .aria_img_container {
       display: center;
       align-items: center;
       justify-content: center;
@@ -127,7 +127,7 @@ html {
       color: $lightest;
     }
 
-    .twitter_form_container {
+    .aria_form_container {
       background-color: $dark;
       width: 100%;
       padding: calc($rem * 5) 2rem;
@@ -202,7 +202,7 @@ html {
 }
 
 @media (min-width: 1000px) {
-  .twitter_img_form_container {
+  .aria_img_form_container {
     flex-direction: row;
     height: 100vh;
 
@@ -210,7 +210,7 @@ html {
       font-size: 4rem;
     }
 
-    .twitter_form_container {
+    .aria_form_container {
       width: 50%;
       padding: calc($rem * 2) calc($rem * 3);
 
@@ -219,7 +219,7 @@ html {
       }
     }
 
-    .twitter_img_container {
+    .aria_img_container {
       width: 50%;
       order: 0;
       background-attachment: fixed;
