@@ -1,439 +1,542 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url("https://fonts.cdnfonts.com/css/chirp-2");
 
 :root {
-    --blue: #1D9BF0;
-    --blueDark: #0984d6;
-    --black: #0F1419;
-    --gray: #EFF3F4;
-    --grayDark: #e2e3e3;
+  --black: #000;
+  --white: #fff;
+  --headings-white: #e7e9ea;
+  --blue: #1f9bf0;
+  --background-grey: #212327;
+  --light-grey: #71767a;
+  --grey: #181818;
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--black);
-    
+  background-color: var(--black);
+  color: var(--white);
+  margin: 0;
+  font-family: "Chirp", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+}
+
+/* Left Sidebar */
+.left-sidebar{
+  width: 30vw;
+  height: 100vw;
+  left: 0;
+  top: 0;
+  border-right: 1.5px solid var(--background-grey);
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.links-flex{
+ display: flex;
+ align-items: flex-start;
+ margin-top: 0.5rem 1rem;
+ cursor: pointer; 
+ width: 16rem;
+ flex-direction: column;
+}
+
+.white-logo{
+  padding: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  gap: 0;
+  margin-bottom: 0%;
+}
+
+/* Twiiter Logo On Hovered */
+.white-logo:hover{
+  background-color: var(--background-grey);
+ }
+
+/* Twitter Logo */
+.twitter-white-logo{
+  height: 2rem;
+  width: 2rem;
+ } 
+
+/* # and Settings Icon Allignment */
+.link-flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 1rem;
+  padding: 0rem 1rem;
+  padding-right:2rem ;
+}
+
+/* # and Settings On Hovered*/
+.link-flex:hover{
+  background-color: var(--background-grey);
+  border-radius: 2rem;
+}
+
+.link-icon{
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.link-text{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem 1rem;
+}
+
+/* main Feed */
+.middle-section {
+  width: 40%;
+  background-color: var(--black);
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+}
+
+.search-flex{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar{
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--background-grey);
+}
+
+.search-bar input{
+  flex: 1;
+  background-color: var(--background-grey);
+  border:none;
+  color: var(--light-grey);
+  font-family: "Chirp", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.search-bar input:focus{
+  outline: none;
+}
+
+.search-icon,
+.setting-icon{
+  height: 1.2rem;
+  width: 1.2rem;
+  cursor: pointer;
 }
 
 
-a {
-    text-decoration: none;
-    color: var(--black);
-    display: inline-block;
+/* Right Sidebar */
+.right-sidebar{
+  width: 30vw;
+  height: 100vw;
+  right: 0;
+  top: 0;
+  border-left: 1.5px solid var(--background-grey);
+  position: sticky;
 }
 
-.bold {
-    font-weight: bold;
+.signup-container{
+  display:block;
+  padding: 1rem;
+  border: 1.5px solid var(--background-grey);
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
-.profile-name {
-    font-size: 0.9rem;
-    color: var(--black)
+.signup-container h3{
+  margin: 0;
 }
 
-.small-text {
-    font-size: 0.8rem;
-    color: gray
+.signup-container p,
+.right-links p,
+.more-p-tag{
+  color: var(--light-grey);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* SIgnup with Google */
+.signup-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  margin: 1rem 0rem;
+  padding: 0.8rem 1rem;
+  gap: 0.5rem;
+  background-color: var(--white);
+}
+
+/* Google Icon */
+.signup-btn-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.signup-btn p{
+  font-size: 1rem;
+  color: var(--black);
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+.signup-btn:hover{
+  background-color: var(--headings-white);
+  cursor: pointer;
+}
+
+/* Twitter Hyperlinks */
+.twitter-links{
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.twitter-links:hover{
+  text-decoration: underline;
+}
+
+/* Footer Right */
+.right-links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 1rem;
+  margin: 0rem 10%;
+}
+
+.right-links p{
+  min-width: 5rem;
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.right-links p:hover, 
+.more-p-tag:hover{
+  text-decoration: underline;
+}
+
+/* More... Dropdown Styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--black);
+  min-width: 12rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+  box-shadow: rgb(255 255 255 / 20%)0px 0px 15px, rgb(255 255 255 / 15%) 0px 0px 3px 1px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--white);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: var(--background-grey)}
+
+.show {display: block;}
+
+/* Tabs */
+
+/* Style the tab */
+.tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  background-color: var(--black);
+  margin-bottom: 0.1rem;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: var(--light-grey);
+  border-bottom: 4px solid var(--black);
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  flex: 1;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--background-grey);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 600;
+  border-bottom: 4px solid var(--blue);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding-bottom: 4rem;
+}
+
+.tabs-main-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("	https://pbs.twimg.com/semantic_core_img/1585990597197930496/fl4Fe0Tm?format=jpg&name=900x900");
+  height: 380px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tabs-main-img h3 {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.tabs-main-img p {
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.trending-box {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid var(--background-grey);
+}
+
+.trending-box:hover {
+  background-color: #080808;
+}
+
+.trending-heading {
+  margin: 0rem 1rem;
+  font-weight: light;
+  font-size: 1rem;
+  color: var(--light-grey);
+}
+
+.trending-text {
+  margin: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.news-main-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("	https://pbs.twimg.com/semantic_core_img/1585334967164444672/mSLl_zaP?format=jpg&name=small");
+  height: 380px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center center;
+  background-size: cover;
+}
+
+.news-main-img p {
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.sports-box {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid var(--background-grey);
+}
+
+.sports-box:hover {
+  background-color: #080808;
+}
+
+.sports-heading {
+  margin: 0rem 1rem;
+  font-weight: light;
+  font-size: 1rem;
+  color: var(--light-grey);
+}
+
+.sports-text {
+  margin: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 
 
-/* Main wrapper style */
-.main-wrapper {
-    width: min(95%, 1300px);
-    margin: 0 auto;
-    display: flex;
-    gap: 10px;
+/* Bottom Signup Div */
+
+.bottom-signup {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--blue);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
 }
 
-
-/* Left Nav Menu Styles */
-
-.logo-img {
-    width: 1.7rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
+.bottom-text h3 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
-.logo-img:hover{
-    background-color: var(--grayDark);
-    
+.bottom-text p {
+  font-size: 0.8rem;
+  margin: 0.35rem 0rem;
+  margin-bottom: 0rem;
 }
 
-
-.nav-links li{
-    font-size: 1.2rem;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
+.signup-btn-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 }
 
-.nav-links li:hover {
-    background-color: var(--grayDark);
-    border-radius: 2rem;
+.btn-outlined {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--white);
+  border-radius: 2rem;
+  cursor: pointer;
 }
 
-.logo-and-navigation{
-    position: fixed;
+.btn-outlined:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transition: all 0.3s;
 }
 
-
-.logo-and-navigation{
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--white);
+  border-radius: 2rem;
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
 }
 
-.new-tweet-from-nav {
-    text-decoration: none;
-    padding: 1rem;
-    background-color: var(--blue);
-    color: white;
-    font-size: 1rem;
-    width: 250px;
-    border-radius: 2rem;
-    text-align: center;
+.btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all 0.3s;
 }
 
-.new-tweet-from-nav:hover {
-    background-color: var(--blueDark);
-}
+/* Media Queries */
 
-.left-nav {
-    display: flex;
-    flex: 1 0 23%;
+@media only screen and (max-width: 1200px) {
+  .left-sidebar {
+    width: 4rem !important;
+  }
+  .link-text {
+    display: none;
+  }
+  .links-flex {
+    margin: 0;
+  }
+  .link-flex {
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+  .right-sidebar {
+    width: 70%;
+  }
+
+  .middle-section {
     width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    /* height: 97vh; */
+  }
 }
 
-
-
-/* left menu - profile section */
-.profile-left-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem;
-    position: fixed;
-    bottom: 10px;
-    width: 250px;
-    
+@media only screen and (max-width: 1000px) {
+  .right-sidebar {
+    display: none;
+  }
 }
 
-.profile-left-menu:hover {
-    background-color: var(--grayDark);
-    border-radius: 3rem;
-}
-
-
-.profile-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px
-}
-
-.profile-img {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    
-}
-
-.fullname-left-menu {
-    font-size: 0.95rem;
-    margin-bottom: 2px;
-}
-
-.username-left-menu{
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  main content style ----------------------------------------  */
-
-.main-content-container {
-    flex: 1 0 50%;
-    /* background-color: gray; */
-    padding-inline: 1rem;
-    
-}
-
-.main-content-container > div {
-    padding: 1rem;
-    border-bottom: 0.5px solid;
-    border-left: 0.5px solid;
-    border-right: 0.5px solid;
-    border-color: rgba(128, 128, 128, 0.2);
-}
-
-.new-tweet-input {
-    padding: 16px;
-    font-size: 1.2rem;
-    border: none;
-}
-
-.profile-tweet-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.profile-tweet-container .profile-img {
-    margin-top: 0.5rem;
-} 
-
-.divider {
-    height: 0.5px;
-    background-color:  rgba(128, 128, 128, 0.4);
-    margin-left: 1rem;
-    
-}
-
-.new-tweet-container {
+@media only screen and (max-width: 700px) {
+  .bottom-signup {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+    padding: 1rem 0rem;
+  }
+  .bottom-text {
+    display: none;
+  }
 
-.new-tweet-icons {
-    display: flex;
-    gap: 15px;
-    margin-left:1rem;
-    color: var(--blue)
-}
-
-.new-tweet-actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 1.2rem;
-}
-
-.new-tweet-button {
-    background-color: var(--blue);
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    font-size: 0.9rem;
-    opacity: 0.5;
-
-}
-
-/* main content > feed > tweet */
-
-.tweet-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.figure {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: gray;
+  .tabs-main-img {
+    height: 180px;
     padding: 0.5rem;
-}
+  }
 
-.figure:hover {
-    background-color: var(--grayDark);
-    border-radius: 1rem;
-    cursor: pointer;
-}
+  .tab {
+    padding: 0rem 1rem;
+  }
 
-.other-actions {
-    display: flex;
-    gap: 15px;
-    color: gray;
-}
+  .tab button {
+    min-width: 6rem;
+  }
 
-.tweet-text {
-    font-size: 0.9rem;
-}
+  .tabs-main-img p {
+    margin-bottom: 0.5rem;
+  }
 
-.tweet-media {
-    width: 100%;
-    border-radius: 1rem;
-    margin-top:1rem;
-}
-
-
-.tweet-main-wrapper {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-    padding-bottom: 1rem;
-}
-
-.tweet-border {
-    border-bottom: 0.5px solid;
-    border-color: rgba(128, 128, 128, 0.2);
-}
-
-.tweet-main {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.feed-main{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  .trending-heading,
+  .trending-text,
+  .Sports-heading,
+  .Sports-text {
+    margin: 0.5rem 0.5rem;
+  }
 }
 
 
-
-
-
-
-
-/*  right menu style ----------------------------------------  */
-
-.right-content-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 27%;
-    gap: 12px;
-    margin-top: 10px; 
-}
-
-
-.search-bar-input{
-    border: none;
-    padding: 1rem;
-    border-radius: 3rem; 
-    background-color: var(--gray);   
-    width: 100%;
-}
-
-.premium-ads, .trend-main-wrapper, .who-to-follow-main-wrapper  {
-    padding: 12px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 1rem;
-    /* width: 100%; */
-    background-color: var(--gray);
-}
-
-
-.menu-title {
-    font-size: 1.2rem;
-}
-
-.premium-ads-text {
-    font-size: 0.9rem;
-}
-
-.premium-ads-button span{
-    padding: 0.5rem 1rem;
-    background-color: var(--black);
-    color: white;
-    border-radius: 2rem;
-    font-size: 0.9rem;
-}
-
-.premium-ads-button {
-    margin-bottom: 8px;
-}
-
-
-.trend-piece-unit {
-    display: flex;
-    flex-direction: column;
-}
-
-.trend-piece-main {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.row-space-between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.trends-more {
-    display: inline;
-    text-align: right;
-    color: gray;
-    width: 2rem;
-}
-
-.display-more {
-    color: var(--blue)
-}
-
-.profile-right-img {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-
-}
-
-
-
-.profile-wrapper-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
-
-/* footer */
-footer * {
-    font-size: 0.75rem;
-    color: gray;
-    
-}
-
-footer a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    
-}
-
-footer nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: stretch;
-    flex-basis: auto;
-}
-
-footer {
-    margin-bottom: 100px;
-    padding: 16px;
-}
