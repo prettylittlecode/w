@@ -1,0 +1,132 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Dofilah Metalic Jumpsuit-Fuchsia",
+        "price": 49.99,
+        "image": { "fields": { "file": { "url": "https://www.fashionnova.com/cdn/shop/files/12-13-23_S149_JP16549PD_Fuchsia_TH_SS_14-50-02_1463_CM_468x.jpg?v=1702934169" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Parasian Affair Jumpsuit",
+        "price": 812.99,
+        "image": { "fields": { "file": { "url": "https://www.fashionnova.com/cdn/shop/files/05-24-23Studio3_HY_JH_10-42-33_19_JP16298_Pink_1011_EH_468x.jpg?v=1685552384" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Up For the Chase Denim Jumpsuit",
+        "price": 712.99,
+        "image": { "fields": { "file": { "url": "https://www.fashionnova.com/cdn/shop/files/12-20-23_S2_35_JP2896CA_LightWash_KJ_RL_13-18-14_3456_PXF_468x.jpg?v=1703717686" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Love Addiction Denim Skirt Set",
+        "price": 622.99,
+        "image": { "fields": { "file": { "url": "https://www.fashionnova.com/cdn/shop/files/12-20-23_S2_12_TS16283C_DarkWash_KJ_RL_10-47-46_3216_PXF_468x.jpg?v=1703715188" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Talk Later Mini Dress",
+        "price": 688.99,
+        "image": { "fields": { "file": { "url": "https://www.fashionnova.com/cdn/shop/files/12-20-23_S4_14_D9480_Black_KS_AC_10-28-19_18690_PXF_468x.jpg?v=1703803640" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Lilian Sweater Mini Dress",
+        "price": 532.99,
+        "image": { "fields": { "file": { "url": "https://www.fashionnova.com/cdn/shop/files/12-20-23_S2_69_ZDCF2379_Lime_KJ_RL_15-29-14_3790_PXF_468x.jpg?v=1703720822" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Flirty Affiar Turtle Gowm (Lavender)",
+        "price": 545.99,
+        "image": { "fields": { "file": { "url": "https://www.fashionnova.com/cdn/shop/files/06-29-23Studio3_TK_SS_10-54-01_33_IDM9139JP_Lavender_13152_JB_468x.jpg?v=1688164007" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Georgiana Satin Gown (Ivory)",
+        "price": 440.99,
+        "image": { "fields": { "file": { "url": "https://www.fashionnova.com/cdn/shop/files/12-15-23_S1_19_D9413C_Ivorycombo_CZ_SS_11-30-17_2554_SG_468x.jpg?v=1703013335" } } }
+      }
+    },
+    {
+      "sys": {
+        "id": "9"
+      },
+      "fields": {
+        "title": "Spread Love Satin Maxi Dress",
+        "price": 386.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://www.fashionnova.com/cdn/shop/products/12-08-22Studio8_KS_IM_11-38-44_49_MM2513_Marsala_2731_JB_JB_468x.jpg?v=1670621226"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "10"
+      },
+      "fields": {
+        "title": "Bonita Lace Maxi Dress",
+        "price": 378.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://www.fashionnova.com/cdn/shop/products/08-16-21Studio2_SN_KP_11-44-53_42_MF2397_Emerald_10809_PB_468x.jpg?v=1629408584"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "11"
+      },
+      "fields": {
+        "title": "Simple Elegant Satin Maxi Dress",
+        "price": 289.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://www.fashionnova.com/cdn/shop/products/05-20-20Studio2_PA_SD_12-12-04_26_FN256_Black_1307_RA_468x.jpg?v=1590015523"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "12"
+      },
+      "fields": {
+        "title": "Maui Mix and March Side Tie Bikini Bottiom-Hot Pink",
+        "price": 248.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "https://www.fashionnova.com/cdn/shop/products/MauiMixAndMatchSideTieBikiniBottom-HotPink_MER_468x.jpg?v=1646180757"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
