@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.products-container {
+  display: contents;
+}
+
+.product {
+  width: auto;
+  background: black;
+  padding: 20px;
+  margin: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font-family: helvetica;
+  height: fit-content;
+  margin-bottom: 10px;
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flow-root;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.product h2 {
+  margin-top: 0;
+}
+
+.buy-button {
+  display: block;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
