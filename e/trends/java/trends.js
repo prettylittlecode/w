@@ -1,6 +1,6 @@
 const trendsContainer = document.getElementById('trends-container');
 
-fetch('https://arplx.github.io/12/i/trends/trends.json')
+fetch('https://prettylittlecode.github.io/w/e/trends/java/trends.json')
   .then(response => response.json())
   .then(trends => {
     trends.forEach(trend => {
