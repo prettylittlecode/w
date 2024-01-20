@@ -1,100 +1,78 @@
-<html style="width: 100%;"><head>
+<html><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1647366627925819393/dx1_x24i_400x400.jpg">
-    <title>Explore | Aria+</title>
-    <meta name="description" content="Aria+">
+    <title>Explore | Aria+ </title>
+    <meta name="description" content="This is a FrontEnd Part of Twitter made using JS,HTML5 &amp; CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./explore.css">
-  <style type="text/css">
-    @font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.ttf) format("truetype");font-style:normal;font-weight:100;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.ttf) format("truetype");font-style:normal;font-weight:300;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.ttf) format("truetype");font-style:normal;font-weight:400;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.ttf) format("truetype");font-style:normal;font-weight:500;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.ttf) format("truetype");font-style:normal;font-weight:700;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.ttf) format("truetype");font-style:normal;font-weight:900;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.ttf) format("truetype");font-style:normal;font-weight:400;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.ttf) format("truetype");font-style:normal;font-weight:500;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.ttf) format("truetype");font-style:normal;font-weight:600;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.ttf) format("truetype");font-style:normal;font-weight:700;font-display:swap}
-    #__wikibuy__ .__wikibuy.__onTop,body~div:not(#gdx-bubble-host),#piggyWrapper,#honeyContainer,#earny-root{position:absolute !important;z-index:100000 !important}.mm-slideout{z-index:initial}.sorry-for-this__empty-styles{position:relative;z-index:10000}
-    #biaadgfchiccfedcjdbdfhfffcedceeg div:empty {
-      display: block !important;
-    }
-  </style><style data-styled="active" data-styled-version="5.3.9">.dWTrLf{visibility:hidden;}.igvzJt{font-family:roboto;font-weight:100;}.igvzJr{font-family:roboto;font-weight:300;}.igvzJo{font-family:roboto;font-weight:400;}.igvzJp{font-family:roboto;font-weight:500;}.igvzJn{font-family:roboto;font-weight:700;}.igvzJl{font-family:roboto;font-weight:900;}.uAvZv{font-family:rebond;font-weight:400;}.uAvZu{font-family:rebond;font-weight:500;}.uAvZx{font-family:rebond;font-weight:600;}.uAvZw{font-family:rebond;font-weight:700;}</style><style data-styled="active" data-styled-version="5.3.9">.dWTrLf{visibility:hidden;}.igvzJt{font-family:roboto;font-weight:100;}.igvzJr{font-family:roboto;font-weight:300;}.igvzJo{font-family:roboto;font-weight:400;}.igvzJp{font-family:roboto;font-weight:500;}.igvzJn{font-family:roboto;font-weight:700;}.igvzJl{font-family:roboto;font-weight:900;}.uAvZv{font-family:rebond;font-weight:400;}.uAvZu{font-family:rebond;font-weight:500;}.uAvZx{font-family:rebond;font-weight:600;}.uAvZw{font-family:rebond;font-weight:700;}</style><style data-styled="active" data-styled-version="5.3.9">.dWTrLf{visibility:hidden;}.igvzJt{font-family:roboto;font-weight:100;}.igvzJr{font-family:roboto;font-weight:300;}.igvzJo{font-family:roboto;font-weight:400;}.igvzJp{font-family:roboto;font-weight:500;}.igvzJn{font-family:roboto;font-weight:700;}.igvzJl{font-family:roboto;font-weight:900;}.uAvZv{font-family:rebond;font-weight:400;}.uAvZu{font-family:rebond;font-weight:500;}.uAvZx{font-family:rebond;font-weight:600;}.uAvZw{font-family:rebond;font-weight:700;}</style><style type="text/css">
-    @font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.ttf) format("truetype");font-style:normal;font-weight:100;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.ttf) format("truetype");font-style:normal;font-weight:300;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.ttf) format("truetype");font-style:normal;font-weight:400;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.ttf) format("truetype");font-style:normal;font-weight:500;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.ttf) format("truetype");font-style:normal;font-weight:700;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.ttf) format("truetype");font-style:normal;font-weight:900;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.ttf) format("truetype");font-style:normal;font-weight:400;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.ttf) format("truetype");font-style:normal;font-weight:500;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.ttf) format("truetype");font-style:normal;font-weight:600;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.ttf) format("truetype");font-style:normal;font-weight:700;font-display:swap}
-    #__wikibuy__ .__wikibuy.__onTop,body~div:not(#gdx-bubble-host),#piggyWrapper,#honeyContainer,#earny-root{position:absolute !important;z-index:100000 !important}.mm-slideout{z-index:initial}.sorry-for-this__empty-styles{position:relative;z-index:10000}
-    #ddbfbddbfdadfchabdebaedifaffeabd div:empty {
-      display: block !important;
-    }
-  </style><style type="text/css">
-    @font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-100.ttf) format("truetype");font-style:normal;font-weight:100;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-300.ttf) format("truetype");font-style:normal;font-weight:300;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-400.ttf) format("truetype");font-style:normal;font-weight:400;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-500.ttf) format("truetype");font-style:normal;font-weight:500;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-700.ttf) format("truetype");font-style:normal;font-weight:700;font-display:swap}@font-face{font-family:"Roboto";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Roboto/roboto-900.ttf) format("truetype");font-style:normal;font-weight:900;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-400.ttf) format("truetype");font-style:normal;font-weight:400;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-500.ttf) format("truetype");font-style:normal;font-weight:500;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-600.ttf) format("truetype");font-style:normal;font-weight:600;font-display:swap}@font-face{font-family:"Rebond";src:url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.woff) format("woff"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.woff2) format("woff2"),url(moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/fonts/Rebond/rebond-700.ttf) format("truetype");font-style:normal;font-weight:700;font-display:swap}
-    #__wikibuy__ .__wikibuy.__onTop,body~div:not(#gdx-bubble-host),#piggyWrapper,#honeyContainer,#earny-root{position:absolute !important;z-index:100000 !important}.mm-slideout{z-index:initial}.sorry-for-this__empty-styles{position:relative;z-index:10000}
-    #ffjcgecicgdafahcjfddcefiijfgafbd div:empty {
-      display: block !important;
-    }
-  </style></head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
   
-  <body style="display: flex;width: 100%;height: 100%;">
+  <body>
     <!-- Left Sidebar -->
-    <div class="left-sidebar" style="width: 20vw;width: 12rem !important;border-right: none;border-left: 0px;position: fixed;height: 100%;gap: 0px;margin-left: 0%;">
-      <div class="links-flex" style="width: 13.5rem;margin-top: 0%;margin-left: 0px;flex-direction: column;position: fixed;height: 100%;gap: 0px;padding-bottom: -11px;">
-        <div class="white-logo" style="background: black;margin-bottom: 0%;margin-left: 3%;">
-          <a href="#">
-            <img src="https://pbs.twimg.com/profile_images/1647366627925819393/dx1_x24i_400x400.jpg" class="logo" alt="Aria+" style="width: 100px;margin-left: 0px;margin-top: -15px;margin-bottom: 0px;">
-          </a>
-        </div>
+    <div class="left-sidebar" style="width: 200px;padding-left: 10px;border-radius: 0px;position: inherit;border-right: 0px;">
+      
+    <div class="links-flex" style="margin-top: -10px;">
         
         
-      <a href="https://prettylittlecode.github.io/w/explore" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Explore</p>
-</a><a href="https://prettylittlecode.github.io/w/notifications" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Notifications</p>
-</a><a href="https://prettylittlecode.github.io/w/messages" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Messages</p>
-</a><a href="https://prettylittlecode.github.io/w/cc" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">CC</p>
-</a><a href="https://prettylittlecode.github.io/w/tv" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">tv</p>
-</a><a href="https://prettylittlecode.github.io/w/music" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Music</p>
-</a><a href="https://prettylittlecode.github.io/w/market" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Market</p>
-</a><a href="https://prettylittlecode.github.io/w/games" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Games</p>
-</a><a href="https://prettylittlecode.github.io/w/communities" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Communities</p>
-</a><a href="https://prettylittlecode.github.io/w/events" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Events</p>
-</a><a href="https://prettylittlecode.github.io/w/travel" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Travel</p>
-</a><a href="https://prettylittlecode.github.io/w/pay" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Pay</p>
-</a><a href="https://prettylittlecode.github.io/w/health" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Health</p>
-</a><a href="https://prettylittlecode.github.io/w/learn" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Learn</p>
-</a><a href="https://prettylittlecode.github.io/w/files" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Files</p>
-</a><a href="https://ariaplus.net" class="link-flex" style="margin-left: 0px;margin-top: 20px;margin-bottom: -45px;font-family: helvetica;background: #0000;text-decoration: none;color: white;">
-          <img src="assets/hashtag.svg" class="link-icon" style="display: none;">
-          <p class="link-text" style="display: block;margin-left: 45px;height: 100%;">Aria+</p>
-</a></div>
-    </div>
+        
+      
+        <a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 40px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img class="link-icon" src="https://pbs.twimg.com/profile_images/1647366627925819393/dx1_x24i_400x400.jpg" style="width: 60px;height: 60px;">
+          
+        <p class="link-text" style="color: black;width: 65px;"></p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 90px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Explore</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 120px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img class="link-icon" src="https://cdn3.vectorstock.com/i/1000x1000/01/67/speech-bubble-message-box-vector-24550167.jpg">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Notifications</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 149px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Messages</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 180px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Ai</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 210px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">tv</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 240px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Music</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 270px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Market</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 300px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Games</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 330px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Communities</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 360px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Events</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 390px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Travel</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 420px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Pay</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 450px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Health</p></a><a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 480px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img src="assets/hashtag.svg" class="link-icon">
+          
+        <p class="link-text" style="padding-left: 0px;margin-left: 5px;font-family: helvetica;font-weight: 500;font-size: 18px;width: 75px;">Learn</p></a></div></div>
     <!-- Main Twitter Feed  -->
-    <div class="middle-section" style="margin-left: auto;position: unset;width: 100%;max-width: 50%;max-block-size: %;justify-content: center;justify-content: safe;max-block-size: 100%;align-content: center;align-items: center;align-self: center;background: color;padding-right: 4%;padding-left: 20%;background: none;margin-top: 0;height: 100%;padding-top: 15%;">
-      <div class="top-nav" style="position: unset;width: 90%;margin-top: -12%;overflow: clip;padding-right: 0px;">
+    <div class="middle-section" style="width: 80%;margin-top: 10px;">
+      <div class="top-nav">
         
 
-        <div class="tab" style="width: 100%;margin-top: -30px;justify-content: normal;">
-          
-          <button id="defaultOpen" class="tablinks active" onclick="switchTabs(event, 'explore')">Explore</button><button class="tablinks" onclick="switchTabs(event, 'trends')">
+        <div class="tab">
+          <button class="tablinks active" id="defaultOpen" onclick="switchTabs(event, 'ForYou')">
+            For You
+          </button>
+          <button class="tablinks" onclick="switchTabs(event, 'Trending')">
             Trending
           </button>
           <button class="tablinks" onclick="switchTabs(event, 'News')">
@@ -105,257 +83,53 @@
           </button>
           <button class="tablinks" onclick="switchTabs(event, 'Entertainment')">
             Entertainment
-          </button><button class="tablinks" onclick="switchTabs(event, '2024')">2024</button>
+          </button>
         </div>
       </div>
 
-      
-
-      <div class="tabcontent" style="display: block;" id="explore">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      <div style="border-bottom: 2px solid #2f2f2f;margin-bottom: 0%;padding-bottom: 5%;" id="image-text-post">
-
-              <!-- next div -->
-
-                <div id="author-details" style="width: 100%;">
-
-                    <div id="author-info" style="margin-top: 3%;display: flex;gap: 0%;">
-                        <div id="author-profile-picture" style="width: 35px;height: auto;border-radius: 15px;margin-bottom: 5px;">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShelyEcajYsmgTHUoSvcgou_xhCC2PDuNBlg&amp;usqp=CAU" alt="profile picture" style="width: inherit;height: i;border-radius: 20px;margin-bottom: 0%;">
-                        </div>
-                        <p style="margin-left: 0px;text-align: top;margin-top: 0%;font-size: 15px;margin-right: -2.2%;padding: 10px;"><b style="text-align: center;text-size: 0px;margin-right: 0%;padding: 0px;">missworld</b></p>
-                        
-                        <p style="margin-top: 0%;COLOR: WHITE;opacity: 50%;font-size: 12px;padding: 12px;margin-left: 0%;">2hrs</p>
-                    </div>
-
-                    
-
-                </div>
-
-             <!-- next div -->
-
-                <div id="image-post" style="width: 100%;">
-
-                    <img src="https://p.lodz.pl/sites/default/files/2022-03/karolina-bielawska-miss-world-2021-fot.-instagram-karloliny-bielawskiej_0_0.jpg" alt="interns during a fun break session" style="width: 100%;border-radius: 10px;object-fit: cover;">
-
-                </div>
-
-             <!-- next div -->
-
-
-                <div id="author-interactive-section" style="width: ;height: ;">
-
-                    
-
-                <!-- next div -->
-
-                    
-
-
-                <!-- next div -->
-
-                    <div id="author-caption" style="font-size: 82%;margin-bottom: -1%;">
-                        <p style="font-size: 17px;"><strong>missworld</strong>its begun</p>
-                    </div>
-
-
-                <!-- next div -->
-
-                    <div id="engagement-info" style="margin-top: -20px;">
-
-                        <div id="engagement-info-right" style="width: 100%;height: 30px;display: flex;gap: 1%;padding: 10px;">
-                            <div class="engagement-info-right-icon" style="width: 45px;height: 19px;">
-                                <img alt="love icon" class="love-icon" style="width: inherit;" src="https://cdn-icons-png.flaticon.com/512/2441/2441015.png">
-
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div><div class="engagement-info-right-icon" style="width: 45px;height: 19px;">
-                                <img alt="love icon" class="love-icon" style="width: inherit;" src="https://cdn-icons-png.flaticon.com/512/2441/2441013.png">
-
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div><div class="engagement-info-right-icon" style="width: 45px;height: 19px;">
-                                <img alt="love icon" class="love-icon" style="width: inherit;" src="https://cdn-icons-png.flaticon.com/512/2441/2441025.png">
-
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div>
-
-                            
-
-                            
-                        <div class="engagement-info-right-icon" style="width: 45px;height: 19px;">
-                                <img alt="love icon" class="love-icon" style="width: inherit;" src="https://cdn-icons-png.flaticon.com/256/2441/2441023.png">
-
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div></div>
-
-                        
-
-                    </div><div id="author-likes-insight" style="font-size: 78%;font-family: helvetica;margin-bottom: -9px;">
-                        <p>Liked by <strong>madetech</strong> and <strong>others</strong></p>
-                    </div><div id="author-comment" style="font-size: 80%;margin-bottom: -1.5%;">
-                        <p>View all 50 comments</p>
-                    </div>
-
-
-                <!-- next div -->
-
-                    <div id="add-comment" style="width: 100%;margin-top: -12px;">
-                        <input type="text" placeholder="Add a comment..." style="width: 100%;background: black;color: white;border: 0px;">
-
-                        <div id="add-comment-emoji">
-                            <i class="fa-regular fa-face-smile" aria-hidden="true"></i>
-                        </div>
-                    </div>
-               
-                    </div></div><div style="border-bottom: 2px solid #2f2f2f;margin-bottom: 0%;padding-bottom: 5%;" id="image-text-post">
-
-              <!-- next div -->
-
-                <div id="author-details" style="width: 100%;">
-
-                    <div id="author-info" style="margin-top: 3%;display: flex;gap: 0%;">
-                        <div id="author-profile-picture" style="width: 35px;height: auto;border-radius: 15px;margin-bottom: 5px;">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShelyEcajYsmgTHUoSvcgou_xhCC2PDuNBlg&amp;usqp=CAU" alt="profile picture" style="width: inherit;height: i;border-radius: 20px;margin-bottom: 0%;">
-                        </div>
-                        <p style="margin-left: 0px;text-align: top;margin-top: 0%;font-size: 15px;margin-right: -2.2%;padding: 10px;"><b style="text-align: center;text-size: 0px;margin-right: 0%;padding: 0px;">missworld</b></p>
-                        
-                        <p style="margin-top: 0%;COLOR: WHITE;opacity: 50%;font-size: 12px;padding: 12px;margin-left: 0%;">2hrs</p>
-                    </div>
-
-                    
-
-                </div>
-
-             <!-- next div -->
-
-                
-
-             <!-- next div -->
-
-
-                <div id="author-interactive-section" style="width: ;height: ;margin-top: -25px;">
-
-                    
-
-                <!-- next div -->
-
-                    
-
-
-                <!-- next div -->
-
-                    <div id="author-caption" style="font-size: 82%;margin-bottom: -1%;">
-                        <p style="font-size: 17px;"><strong>missworld</strong>its begun</p>
-                    </div>
-
-
-                <!-- next div -->
-
-                    <div id="engagement-info" style="margin-top: -20px;margin-bottom: 20px;">
-
-                        <div id="engagement-info-right" style="width: 100%;height: 30px;display: flex;gap: 1%;">
-                            <div class="engagement-info-right-icon" style="width: 45px;height: 19px;">
-                                <img alt="love icon" class="love-icon" src="https://www.shutterstock.com/image-vector/simple-heart-icon-white-on-260nw-1059366842.jpg" style="width: inherit;">
-
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div><div class="engagement-info-right-icon" style="width: 45px;height: 19px;">
-                                <img alt="love icon" class="love-icon" style="width: inherit;" src="https://png.pngtree.com/png-vector/20191022/ourmid/pngtree-comment-icon-isolated-on-background-png-image_1847745.jpg">
-
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div><div class="engagement-info-right-icon" style="width: 45px;height: 19px;">
-                                <img alt="love icon" class="love-icon" style="width: inherit;" src="https://png.pngtree.com/png-vector/20190425/ourmid/pngtree-vector-share-icon-png-image_986967.jpg">
-
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div>
-
-                            
-
-                            
-                        </div>
-
-                        
-
-                    </div><div id="author-likes-insight" style="font-size: 78%;font-family: helvetica;margin-bottom: -9px;">
-                        <p>Liked by <strong>madetech</strong> and <strong>others</strong></p>
-                    </div><div id="author-comment" style="font-size: 80%;margin-bottom: -1.5%;">
-                        <p>View all 50 comments</p>
-                    </div>
-
-
-                <!-- next div -->
-
-                    <div id="add-comment" style="width: 100%;margin-top: -12px;">
-                        <input type="text" placeholder="Add a comment..." style="width: 100%;background: black;color: white;border: 0px;">
-
-                        <div id="add-comment-emoji">
-                            <i class="fa-regular fa-face-smile" aria-hidden="true"></i>
-                        </div>
-                    </div>
-               
-                    </div></div></div><div class="tabcontent" style="display: none;" id="trends">
-        <h3 style="margin: 1rem">Trends on Aria+</h3>
-        <div class="trending-box" style="gap: 0px;">
-          <p class="trending-heading" style="margin-bottom: 1%;">Top</p>
-          <a href="https://ariaplus.net" <p="" class="trending-text" style="text-decoration: none;color: white;margin-top: 0px;">#aria+ </a>
-          <p class="trending-heading" style="margin-top: 1%;">2024</p>
+      <div id="ForYou" class="tabcontent" style="display: block;">
+        <div class="tabs-main-img" style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(&quot;https://pbs.twimg.com/media/Evv3qVaXIAc9IqG?format=jpg&amp;name=large&quot;);margin-top: 10px;border-radius: 10px;width: auto;">
+          <h3>Entertainment · LIVE</h3>
+          <p style="padding-bottom: 0px;margin-bottom: 0px;font-size: 100%;">All Here</p>
         </div>
-        <div class="trending-box">
-          <p class="trending-heading">2 · Trending</p>
-          <p class="trending-text">#2024</p>
-          <p class="trending-heading">2024</p>
-        </div>
-        <div class="trending-box">
-          <p class="trending-heading">3 · Trending</p>
-          <p class="trending-text">U.S Elections</p>
-          <p class="trending-heading">144K Tweets</p>
-        </div>
-        <div class="trending-box">
-          <p class="trending-heading">4 · Trending</p>
-          <p class="trending-text">#premier</p>
-          <p class="trending-heading">2024</p>
-        </div>
-        <div class="trending-box">
-          <p class="trending-heading">5 · Trending</p>
-          <p class="trending-text">CC</p>
-          <p class="trending-heading">2024</p>
-        </div>
-        <div class="trending-box">
-          <p class="trending-heading">6 · Trending</p>
-          <p class="trending-text">#taylorswift</p>
-          <p class="trending-heading">2024</p>
-        </div>
-        <div class="trending-box">
-          <p class="trending-heading">7 · Trending</p>
-          <p class="trending-text">#ukraine</p>
-          <p class="trending-heading">2024</p>
-        </div>
-        <div class="trending-box">
-          <p class="trending-heading">8 · Trending</p>
-          <p class="trending-text">#covid
-</p>
-          <p class="trending-heading">2024</p>
-        </div>
-        <div class="trending-box">
-          <p class="trending-heading">9 · Trending</p>
-          <p class="trending-text">#forestwitch</p>
-          <p class="trending-heading">2024</p>
-        </div>
+          <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/</title>
+  <!-- Add your CSS file here -->
+  <link rel="stylesheet" href="feed.css">
+
+
+  <div id="products-container" style="margin-top: 25px;border-top: 1px solid #171717;"></div>
+  <!-- Include your JavaScript file after the products container -->
+  <script src="feed.js"></script>
+
+
+        
+        
       </div>
+
+      <div id="Trending" class="tabcontent" style="display: none;">
+        <h3 style="margin: 1rem">Trends In India</h3>
+             </div>
+          <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/</title>
+  <!-- Add your CSS file here -->
+  <link rel="stylesheet" href="feed.css">
+
+
+  <div id="products-container" style="margin-top: 25px;border-top: 1px solid #171717;"></div>
+  <!-- Include your JavaScript file after the products container -->
+  <script src="feed.js"></script>
+      </div>
+ 
 
       <div id="News" class="tabcontent" style="display: none;">
-        <div class="news-main-img" style="margin-top: 2%;background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.34) ), url(&quot;https://ichef.bbci.co.uk/news/1024/branded_news/15300/production/_132148768_shakira-gettyimages-1878229039.jpg&quot;);border-radius: 10px;">
-          <h3>World news · LIVE</h3>
-          
+        <div class="news-main-img" style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url(&quot;https://gfx.videobuster.de/archive/v/cKcADh-UilC4Dx42EazgQGgcz0lMkawsSUyRjAxJTJGaW1hmSUyRmpwZWclMkZlM2ZmNWPfOGZjqvtlYzZjMGXRqWQxYTDSMy5qcGcmcj1jd6wwMHiU7DA.jpg&quot;);margin-top: 10px;border-radius: 10px;">
+          <h3 style="font-size: 100%;margin: 0px;padding: 0px;">World news · LIVE</h3>
+          <p style="margin-bottom: 0px;font-size: 100%;">The latest updates from Iran as protests continue across the country</p>
         </div>
-        <p class="trending-heading" style="margin-top: 3%;">Top</p>
+        <p class="trending-heading">Trending In Politics</p>
         <p class="trending-text">WWIII</p>
         <p class="trending-heading">
           Trending with <a href="#" class="twitter-links">#WW3</a>
@@ -364,48 +138,66 @@
       
 
         <div id="Sports" class="tabcontent" style="display: none;">
-          <h3 style="margin: 1rem">Sports on Aria+</h3>
-          <div class="sports-box" style="font-size: ;">
+          <div class="news-main-img" style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url(&quot;https://cdn.britannica.com/51/190751-050-147B93F7/soccer-ball-goal.jpg&quot;);margin-top: 10px;border-radius: 10px;">
+          <h3 style="font-size: 100%;margin: 0px;padding: 0px;">World news · LIVE</h3>
+          <p style="margin-bottom: 0px;font-size: 100%;">The latest updates from Iran as protests continue across the country</p>
+        </div><h3 style="margin: 1rem">Trends In India</h3>
+          <div class="sports-box">
             <p class="sports-heading">1 · Sports</p>
-            <p class="sports-text" style="font-size: 18px;">Premier League</p>
-            <p class="sports-heading">2024</p>
+            <p class="sports-text">Ryan Giggs</p>
+            <p class="sports-heading">2,316 Tweets</p>
           </div>
-          <div class="sports-box" style="">
+          <div class="sports-box">
             <p class="sports-heading">2 · Sports</p>
-            <p class="sports-text" style="font-size: 18px;">Barclays</p>
-            <p class="sports-heading">2024</p>
+            <p class="sports-text">#IPLAuction</p>
+            <p class="sports-heading">19.3K Tweets</p>
           </div>
           <div class="sports-box">
             <p class="sports-heading">3 · Sports</p>
-            <p class="sports-text" style="font-size: 18px;">#IPL2023</p>
-            <p class="sports-heading">2024</p>
+            <p class="sports-text">#IPL2023</p>
+            <p class="sports-heading">14K Tweets</p>
           </div>
-          
-          
-          
-          
-          
-          
+          <div class="sports-box">
+            <p class="sports-heading">4 · Sports</p>
+            <p class="sports-text">Venezuela</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">5 · Sports</p>
+            <p class="sports-text">#CristianoRonaldo</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">6 · Sports</p>
+            <p class="sports-text">Portugal</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">7 · Sports</p>
+            <p class="sports-text">Asamoah Gyan</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">8 · Sports</p>
+            <p class="sports-text">#earthquake</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">9 · Sports</p>
+            <p class="sports-text">#earthquake</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
         </div>
 
         <div id="Entertainment" class="tabcontent" style="display: none;">
-          <div class="tabs-main-img" style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) ), url(&quot;https://people.com/thmb/9uGdBRNKu7lCYdCpKde438oTUrY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/taylor-swift-joined-by-maren-morris-060523-tout-c762fe47b0dc438d92a390bb10e69d83.jpg&quot;);height: 380px;padding: 1rem;display: flex;flex-direction: column;justify-content: flex-end;background-position: center center;background-size: cover;margin-top: 2%;border-radius: 10px;">
-            <h3 style="font-weight: bolder;">LIVE</h3>
-            <p>Taylor Swift Sings Emotional Version of 'I Don't Wanna Live Forever'</p>
+          <div class="tabs-main-img" style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url(&quot;https://cdn.theatertoolkit.com/media/majesticphx/features/backdrops/mean-girls-2024--me13948-Medium.jpg&quot;);margin-top: 10px;border-radius: 10px;">
+            <h3>Entertainment · LIVE</h3>
+            <p>The latest from Season 16 of Bigg Boss</p>
           </div>
-          <p class="trending-heading" style="margin-top: 2%;">Trending in Music</p>
-          <p class="trending-text" style="font-weight: 550;">Olivia Rodrigo's Guts is critics' favourite album of 2023</p>
+          <p class="trending-heading">Trending in Music</p>
+          <p class="trending-text">AND NOTHING FOR KPOP</p>
           <p class="trending-heading">
             6,453 Tweets <a href="#" class="twitter-links"></a>
-          </p>
-        </div><div class="tabcontent" style="display: none;" id="2024">
-          <div class="tabs-main-img" style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) ), url(&quot;https://st1.latestly.com/wp-content/uploads/2023/10/Britney-Spears-1.jpg&quot;);height: 380px;padding: 1rem;display: flex;flex-direction: column;justify-content: flex-end;background-position: center center;background-size: cover;margin-top: 2%;border-radius: 10px;">
-            <h3 style="font-weight: 700;">USA</h3>
-            <p style="margin-top: 0;margin-bottom: 0;">Britney Spears will break the internet in 2024</p>
-          </div>
-          <p class="trending-heading" style="margin-top: 2%;">Trending</p>
-          <p class="trending-text">What to expect in 2024</p>
-          <p class="trending-heading">2024<a href="#" class="twitter-links"></a>
           </p>
         </div>
     </div>
@@ -433,12 +225,9 @@
     
 
     <!-- Right Sidebar -->
-    <div class="right-sidebar" style="margin-left: 0%;width: 50%;font-family: helvetica;background: black;position: unset;">
-      <div class="signup-container" style="width: 80%;margin-left: 7%;height: 35%;">
-        <div class="search-bar" style="margin-bottom: 5%;">
-            <img src="assets/search.svg" class="search-icon">
-            <input type="text" placeholder="Search Twitter">
-          </div><h3>New to Aria+?</h3>
+    <div class="right-sidebar" style="width: 530px;border-left: 0px;">
+      <div class="signup-container">
+        <h3>New to Aria+</h3>
         <p>Sign up now to get your own personalized timeline!</p>
         
         
@@ -453,11 +242,11 @@
         <p>Cookie Policy</p>
         <p>Privacy Policy</p>
       </div>
-      <div class="right-links" style="gap: 0px;">
+      <div class="right-links">
         <p>Accessibility</p>
         <p>Ads Info</p>
         <!-- More... Dropdown -->
-        <div class="dropdown" style="margin-left: -25px;">
+        <div class="dropdown">
           <p class="more-p-tag" onclick="dropDownFunction()">More...</p>
           <div id="myDropdown" class="dropdown-content">
             <a href="#">About</a>
@@ -468,7 +257,7 @@
         </div>
       </div>
       <div class="right-links">
-        <p>© 2024 Aria+, Inc.</p>
+        <p>© 2022 Twitter, Inc.</p>
       </div>
     </div>
     <!-- Bottom SigUp Tab -->
@@ -499,10 +288,4 @@
       </script>
   
     
-
-<script id="jeadedeebbejfdbgbdcdigddbeaeefdd" type="text/javascript" src="moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/js/jQuery.js"></script><script id="hgdadddbfbhcficbjhdfgfcbaaddabch" type="text/javascript" src="moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/js/jgi.js"></script><div id="biaadgfchiccfedcjdbdfhfffcedceeg" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; contain-intrinsic-block-size: initial; contain-intrinsic-inline-size: initial; background: initial; background-blend-mode: initial; border: initial; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: initial; float: initial; clear: initial; vertical-align: initial; baseline-source: initial; overflow: initial; overflow-anchor: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; scroll-snap-stop: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; container: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; scrollbar-gutter: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: initial; box-shadow: initial; clip: initial; filter: initial; backdrop-filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; font-palette: initial; math-depth: initial; math-style: initial; visibility: initial; writing-mode: initial; text-orientation: initial; print-color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; hyphenate-character: initial; forced-color-adjust: initial; -webkit-text-security: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; color-scheme: initial; scrollbar-color: initial; list-style: initial; quotes: initial; margin: initial; overflow-clip-margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; page: initial; padding: initial; scroll-padding: initial; inset: initial; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: initial; min-width: initial; max-width: initial; height: initial; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; contain-intrinsic-size: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; d: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; transition: initial; animation: initial; animation-composition: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial; position: relative; z-index: 2147483647;"><div style="all: initial;"></div></div>
-
-<script id="bcejhjahdffcficaihbeacjcgjbghegb" type="text/javascript" src="moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/js/jQuery.js"></script><script id="cjahbdcfcefbfehfiebhccfcdgdebgaa" type="text/javascript" src="moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/js/jgi.js"></script><div id="ddbfbddbfdadfchabdebaedifaffeabd" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; contain-intrinsic-block-size: initial; contain-intrinsic-inline-size: initial; background: initial; background-blend-mode: initial; border: initial; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: initial; float: initial; clear: initial; vertical-align: initial; baseline-source: initial; overflow: initial; overflow-anchor: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; scroll-snap-stop: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; container: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; scrollbar-gutter: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: initial; box-shadow: initial; clip: initial; filter: initial; backdrop-filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; font-palette: initial; math-depth: initial; math-style: initial; visibility: initial; writing-mode: initial; text-orientation: initial; print-color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; hyphenate-character: initial; forced-color-adjust: initial; -webkit-text-security: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; color-scheme: initial; scrollbar-color: initial; list-style: initial; quotes: initial; margin: initial; overflow-clip-margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; page: initial; padding: initial; scroll-padding: initial; inset: initial; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: initial; min-width: initial; max-width: initial; height: initial; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; contain-intrinsic-size: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; d: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; transition: initial; animation: initial; animation-composition: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial; position: relative; z-index: 2147483647;"><div style="all: initial;"></div></div>
-<script id="dagaaibaegaffejdjdbbacahfbcebdji" type="text/javascript" src="moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/js/jQuery.js"></script><script id="jegbbjdhaiccffdcigbcgbdaeejfhcac" type="text/javascript" src="moz-extension://319b06de-0c46-4722-b5d9-08dc3e6f7b8f/js/jgi.js"></script><div id="ffjcgecicgdafahcjfddcefiijfgafbd" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; contain-intrinsic-block-size: initial; contain-intrinsic-inline-size: initial; background: initial; background-blend-mode: initial; border: initial; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: initial; float: initial; clear: initial; vertical-align: initial; baseline-source: initial; overflow: initial; overflow-anchor: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; scroll-snap-stop: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; container: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; scrollbar-gutter: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: initial; box-shadow: initial; clip: initial; filter: initial; backdrop-filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; font-palette: initial; math-depth: initial; math-style: initial; visibility: initial; writing-mode: initial; text-orientation: initial; print-color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; hyphenate-character: initial; forced-color-adjust: initial; -webkit-text-security: initial; text-wrap: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; color-scheme: initial; scrollbar-color: initial; list-style: initial; quotes: initial; margin: initial; overflow-clip-margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; page: initial; padding: initial; scroll-padding: initial; inset: initial; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: initial; min-width: initial; max-width: initial; height: initial; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; contain-intrinsic-size: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; d: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; transition: initial; animation: initial; animation-composition: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial; position: relative; z-index: 2147483647;"><div style="all: initial;"></div></div>
-
 </body></html>
